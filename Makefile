@@ -19,7 +19,7 @@ TARGET_CFLAGS += -D_GNU_SOURCE
 define Package/k3screenctrl
   SECTION:=utils
   CATEGORY:=Utilities
-  DEPENDS:=
+  DEPENDS:=@TARGET_bcm53xx_generic_DEVICE_phicomm_k3 +@KERNEL_DEVMEM +bash
   TITLE:=LCD screen controller on PHICOMM K3
   URL:=https://github.com/1005789164/k3screenctrl
 endef
